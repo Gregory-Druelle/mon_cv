@@ -1,0 +1,39 @@
+
+
+/*FIRST MOBILE*/
+
+@media (max-width:600px) {
+    .cher {
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        padding: 1em 2em;
+        font-size: 18px;
+        background: #222;
+        color: #aaa;
+        height: 440px;
+    }
+    
+    h1 { 
+        font-size: 2.5em;
+        margin-top: 30px;
+    }
+
+}/*FIN FIRST MOBILE*/
+
+ /*DEBUT TABLETTE*/
+ 
+@media (min-width:601px) {
+    .cher {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    padding: 1em 2em;
+    font-size: 18px;
+    background: #222;
+    color: #aaa;
+    }
+    h1 { 
+    font-size: 3.5em;
+    margin-top: 50px;
+    }
+
+}/*FIN TABLETTE*/
