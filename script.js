@@ -1,3 +1,13 @@
+
+//DARKMODEBUTTON
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+
+//ANIMATIONHEADER
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;

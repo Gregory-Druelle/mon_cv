@@ -1,6 +1,33 @@
 body {
   background-image: url(img/fond.jpg);
 }
+.dark-mode {
+  background-image: none;
+  background-color: #000;
+  color: blanchedalmond !important;
+}
+.dark-mode h1 {
+  color: blanchedalmond !important;
+}
+.dark-mode h2 {
+  color: blanchedalmond !important;
+}
+.dark-mode h3 {
+  color: blanchedalmond !important;
+}
+.dark-mode h4 {
+  color: blanchedalmond !important;
+}
+.dark-mode h5 {
+  color: blanchedalmond !important;
+}
+.dark-mode h6 {
+  color: blanchedalmond !important;
+}
+.dark-mode a {
+  color: blanchedalmond !important
+  ;
+}
 
 /*FIRST MOBILE*/
 
@@ -71,9 +98,9 @@ body {
       text-decoration: none;
     }
     li {
-        color: black !important;
-        margin-left: 15px;
-        font-size: 30px;
+      color: black !important;
+      margin-left: 15px;
+      font-size: 30px;
     }
     li:not(:last-child) {
       margin-bottom: 5px;
@@ -94,8 +121,20 @@ body {
 
     /*FIN BOUTON BURGER*/
 
+    #theme-btn {
+      align-items: center !important;
+    }
+
+    /*BOUTONDARKMODE*/
+    .btn-darkMode {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    /*FIN__BOUTONDARKMODE*/
+
     #headctr {
-        margin: 0;
+        margin top: 0;
         font-family: 'Raleway', sans-serif;
         margin-top: 10px !important;
         padding: 1em 2em;
@@ -208,18 +247,32 @@ body {
  /*DEBUT TABLETTE*/
  
 @media (min-width:601px) {
-    .cher {
-    margin: 0;
+  #headctr {
+    margin top: 0;
     font-family: 'Raleway', sans-serif;
+    margin-top: 10px !important;
     padding: 1em 2em;
     font-size: 18px;
-    background: #222;
-    color: #aaa;
-    }
-    h1 { 
-    font-size: 3.5em;
-    margin-top: 50px;
-    }
+    background: black;
+    color: #bebbbb;
+    height: 440px;
+}
+
+h1 { 
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+
+
+
+#logo{
+  position:absolute;
+  margin-top: 30px !important;
+  margin-left: 260px !important;
+}
+picture{
+  width: 99%;
+}
 
     #maphoto {
       max-width: 90%;
@@ -235,6 +288,64 @@ body {
       font-size: larger;
       text-align: center;
     }
-  
+     /*section 2*/
+
+     #section-2 {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .img {
+      max-width: 90%;
+    }
+    #right h4 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-left: 12%;
+      color: #000;
+    }
+    #right h5 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-left: 12%;
+      color: #000;
+    }
+    #right h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: large;
+      color: #000;
+      text-align: center;
+    }
+    #right p {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin-left: 12%;
+      margin-right: 10%;
+    }
+
+    #section-3 {
+
+    }
+    #section-4 h4 {
+      text-align: center;
+    }
+    #section-4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    }
+    .icon {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      justify-content: center;
+    }
+    .cv {
+      text-align: center;
+    }
+    .footer {
+      text-align: center;
+    }
+
 
 }/*FIN TABLETTE*/

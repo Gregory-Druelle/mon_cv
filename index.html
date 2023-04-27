@@ -14,23 +14,23 @@
             <img src="img/logoNB.svg" width="200" height="auto" alt="Logo">
         </picture>
         <nav>
-        <div id="menu">
-            <input id="menu__toggle" type="checkbox">
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>      
-            <ul class="menu__box">
-                <li><a href="#section-1">A propos</a></li>
-                <li><a href="section-2">Mes compétences</a></li>
-                <li><a href="section-3">Mes formation</a></li>
-                <li><a href="section-4">Mes expériences</a></li>
-                <li><a href="section-5">Contact</a></li>
-            </ul>
-        </div>
+            <div id="menu">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+                <span></span>
+                </label>      
+                <ul class="menu__box">
+                    <li><a href="#section-1">A propos</a></li>
+                    <li><a href="#section-2">Mes compétences</a></li>
+                    <li><a href="#section-3">Mes formation</a></li>
+                    <li><a href="#section-4">Mes expériences</a></li>
+                    <li><a href="#section-5">Contact</a></li>
+                </ul>
+            </div>
          </nav>
         <div id="headctr">
             <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"/>
-            <h1>Cher recruteur, Je vous propose mes services: 
+            <h1>Je vous propose mes services: 
             <br>
             <span
                 class="txt-rotate"
@@ -38,6 +38,9 @@
                 data-rotate='[ "Développeur Web.", "Web Mobile.", "Voici.", "mon profil." ,"Bonne lecture." ,"Grégory Druelle" ]'></span>
             </h1>
         </div>
+        <div class="btn-darkMode">
+        <button onclick="myFunction()">Switch mode</button>
+        </div>   
         <section id="section-1">
             <figure id="maphoto">
                 <img src="img/maphoto.png" alt="Gregory Druelle">
@@ -56,10 +59,10 @@
 
     <div id="left">   
         <section id="section-2">
-            <img class="img" src="img/1.png" alt="soft skills">
-            <img class="img" src="img/2.png" alt="soft skills">
-            <img class="img" src="img/3.png" alt="soft skills">
-            <img class="img" src="img/4.png" alt="soft skills">
+            <img class="img" src="img/1.png" alt="skills">
+            <img class="img" src="img/2.png" alt="skills">
+            <img class="img" src="img/3.png" alt="skills">
+            <img class="img" src="img/4.png" alt="skills">
         </section>
     </div>
 
@@ -94,20 +97,18 @@
                 </p>
         </section>
     </div>
-        
-        
-        <section id="section-4">
+        <section id="section-5">
             <h4 class="Contact">Comment me contacter</h4>
             <div class="icon">
                 <a href="mailto:gregory.druelle62@gmail.com"><img src="img/Mail-Icon.avif" height="50px" width="50px" alt="mon adresse mail"></a>
-                <a href="0695805618"><img src="img/Phone-Icon.avif" height="50px" width="50px" alt="mon téléphone"></a>
+                <a href="tel:0695805618"><img src="img/Phone-Icon.avif" height="50px" width="50px" alt="mon téléphone"></a>
                 <a href="https://www.linkedin.com/in/gregory-druelle/"><img src="img/linkedin.avif" height="50px" width="50px" alt="linkedin"></a>
                 <a href="https://github.com/Gregory-Druelle"><img src="img/github.avif" height="50px" width="50px" alt="github"></a>
             </div>
         </section>
-
-        <h6 class="cv"><a href="cv-fr.pdf" class="button" target="_blank">Mes expériences</a></h6>
-
+        <section id="section-4">
+            <h6 class="cv"><a href="cv-fr.pdf" class="button" target="_blank">Mon CV</a></h6>
+        </section>
         <footer class="footer">
             <p class="copyright">copyright © Web-E-Com 2023</p>
         </footer>
