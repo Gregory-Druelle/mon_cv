@@ -85,7 +85,6 @@ body {
         top: 0;
         left: -100%;
         width: 300px;
-        height: 100%;
         margin: 0;
         padding: 80px 0;
         list-style: none;
@@ -134,7 +133,6 @@ body {
     /*FIN__BOUTONDARKMODE*/
 
     #headctr {
-        margin top: 0;
         font-family: 'Raleway', sans-serif;
         margin-top: 10px !important;
         padding: 1em 2em;
@@ -247,35 +245,91 @@ body {
  /*DEBUT TABLETTE*/
  
 @media (min-width:601px) {
-  #headctr {
-    margin top: 0;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 10px !important;
-    padding: 1em 2em;
-    font-size: 18px;
-    background: black;
-    color: #bebbbb;
-    height: 440px;
-}
 
-h1 { 
-    font-size: 2.5em;
-    margin-top: 30px;
-}
+  /*nav*/
+  .menu__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 14px;
+    gap: 10px;
+    list-style: none;
+    color: white;
+    text-shadow:
+             -1px -1px 0 #000,
+             1px -1px 0 #000,
+             -1px  1px 0 #000,
+             1px  1px 0 #000;
+    
+  }
+  .menu__box a {
+    color: rgb(203, 229, 34) !important;
+    text-decoration: none;
+  }
+  /* navbar */
+
+  body {
+      margin: 0;
+      position: relative;
+  }
+
+  #menu__toggle {
+      display: none;
+  }
+    /*body*/
+    #headctr {
+      font-family: 'Raleway', sans-serif;
+      padding: 1em 2em;
+      font-size: 18px;
+      background: black;
+      color: #bebbbb;
+      height: 330px;
+  }
+
+  h1 { 
+      font-size: 2.5em;
+      margin-top: 35px;
+      width: 350px !important;
+  }
 
 
 
-#logo{
-  position:absolute;
-  margin-top: 30px !important;
-  margin-left: 260px !important;
-}
-picture{
-  width: 99%;
-}
+  #logo{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: 30px !important;
+    margin-left: 560px !important;
+  }
+  picture{
+    width: 99%;
+  }
+
+   /*BOUTONDARKMODE*/
+   .btn-darkMode {
+    margin-left: 320px;
+    margin-right: 320px;
+    border: 3px black solid;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    box-shadow: 12px 5px 5px rgb(50, 46, 46);
+  }
+  /*FIN__BOUTONDARKMODE*/
+
+  /*section 1*/
+  #section-1 {
+    display: flex;
+    flex-direction: row;
+  }
 
     #maphoto {
-      max-width: 90%;
+      width: 300px;
+      height: 300px;
       background-color: transparent !important;
     }
     h2 {
@@ -285,8 +339,11 @@ picture{
     }
     #moi {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-size: larger;
+      font-size: 24px;
+      font-weight: bold;
       text-align: center;
+      margin-right: 5px;
+      margin-top: 10px;
     }
      /*section 2*/
 
@@ -295,26 +352,35 @@ picture{
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
     .img {
       max-width: 90%;
     }
     #right h4 {
+      font-size: 16px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       margin-left: 12%;
       color: #000;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     #right h5 {
+      font-size: 14px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       margin-left: 12%;
       color: #000;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     #right h3 {
+      font-size: 14px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: large;
       color: #000;
       text-align: center;
+      margin-top: 30px;
+      margin-bottom: 10px;
     }
     #right p {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -323,8 +389,18 @@ picture{
     }
 
     #section-3 {
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-top: 8px;
     }
+    #container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+
     #section-4 h4 {
       text-align: center;
     }
@@ -349,3 +425,22 @@ picture{
 
 
 }/*FIN TABLETTE*/
+
+  /*VERSION PC*/
+
+  @media (min-width:1000px) {
+
+    /*nav*/
+    
+  /* navbar */
+  
+  body {
+      margin: 0;
+      position: relative;
+  }
+  
+  #menu__toggle {
+      display: none;
+  }
+
+}
