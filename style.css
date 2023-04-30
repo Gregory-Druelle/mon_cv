@@ -186,9 +186,7 @@ body {
       align-items: center;
       gap: 10px;
     }
-    .img {
-      max-width: 90%;
-    }
+   
     #right h4 {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       margin-left: 12%;
@@ -323,13 +321,15 @@ body {
   #section-1 {
     display: flex;
     flex-direction: row;
+    height: auto;
   }
 
     #maphoto {
-      width: 300px;
-      height: 300px;
+      margin-top: 30px;
+      margin-left: 10px;
       background-color: transparent !important;
     }
+    
     h2 {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size:xx-large;
@@ -340,7 +340,7 @@ body {
       font-size: 24px;
       font-weight: bold;
       text-align: center;
-      margin-right: 5px;
+      margin-right: 21px;
       margin-top: 10px;
     }
      /*section 2*/
@@ -353,7 +353,7 @@ body {
       gap: 8px;
     }
     .img {
-      max-width: 90%;
+      margin-left: 10px;
     }
     #right h4 {
       font-size: 16px;
@@ -483,22 +483,23 @@ body {
     #section-1 {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      margin-right: 0 !important;
-      
+      align-items: center; 
     }
   
       #maphoto {
-        width: 300px;
-        height: 300px;
         background-color: transparent !important;
-        margin-left: 60px;
+        
+      }
+      #maphoto img {
+        width: 450px;
+        height: 450px;
       }
       h2 {
         margin-top: 0;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size:xx-large;
         justify-content: center;
+        margin-left: 60px;
         
       }
       #moi {
@@ -523,7 +524,8 @@ body {
         margin-left: 20px;
       }
       .img {
-        max-width: 90%;
+        width: 380px;
+        height: 215px;
       }
       #right h4 {
         font-size: x-large;
